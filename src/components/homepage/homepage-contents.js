@@ -8,7 +8,7 @@ export default function HomeContents(){
     <div className="home-contents">
       <div>
         <h1>Jugnu Sharma</h1>
-        <h3>Web Developer</h3>
+        <h3>Specialist Experience Technology</h3>
       </div>
       <div>
         <HomeButtons />

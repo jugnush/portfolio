@@ -2,7 +2,6 @@ import React from 'react';
 
 import RenderProject from '../share/render-project';
 import youtube1 from '../images/youtube-1.png';
-import youtube2 from '../images/youtube-2.png';
 
 
 export default function YoutubePlayer(){

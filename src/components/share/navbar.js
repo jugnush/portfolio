@@ -7,7 +7,7 @@ export default function NavBar(){
     <header>
       <div className="header-container">
         <Link to='/'>
-          <img src={logo} />
+          <img src={logo} alt="logo" />
         </Link >
         <nav>
           <ul>

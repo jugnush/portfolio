@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import 'particles.js/particles';
 /** import components **/
 import HomeContents from './homepage-contents';
-import HomeButtons from './home-buttons';
+
 
 const particlesJS = window.particlesJS;
 

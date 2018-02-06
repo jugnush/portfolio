@@ -14,7 +14,10 @@ export default function YoutubePlayer(){
   var techUse = ['ReactJS','Redux','restful api','NodeJS','backbone','HTML5','CSS3'];
   var about = `GoWireless is a Verizon Authorized Retailer e-commerce. goal is to deliver world-class service while connecting you with custom smartphone solutions matched perfectly to enhance your wireless lifestyle.
 
-  Responsibility includes, frontend delivery, production support, UAT support, understanding client’s requirement, create frontend delivery plan, and get them delivery on time, which also includes build highly skilled frontend team to progress in project, mentored 4 team members for reactjs and backbone. Work on 
+  Responsibility includes, frontend delivery, production support, UAT support, understanding client’s requirement, create frontend delivery plan, and get them delivery on time, which also includes build highly skilled frontend team to progress in project, mentored 4 team members for reactjs and backbone. Worked on 
+    
+  Below are the details of Frontend Stack Used in https://www.gowireless.com. http://www.victra.com/ 
+  And https://www.verizonwireless.com
   `
   return(
     <RenderProject
