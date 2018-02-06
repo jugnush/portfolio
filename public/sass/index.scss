@@ -1,0 +1,101 @@
+/**===============================================
+                      Colors
+*==============================================**/
+
+/** page color **/
+$main-bg: #3AAFA9;
+$home-h1: #FEFFFF;
+$home-h3: #17252A;
+
+/** nav color **/
+$nav-bg : #2b7A78;
+$nav-content: #DEF2F1;
+$main-bg: #3AAFA9;
+
+/** project page color **/
+$project-h1: #17252A;
+$project-h3: #DEF2F1;
+
+/** contact page color **/
+$fb-bg:#3b5998;
+$github-bg:#bd2c00;
+$linkedin-bg:#3b5998;
+
+
+/**===============================================
+                      Properies
+*==============================================**/
+@mixin mid-pg-props {
+  position: absolute;
+  margin:auto;
+  top:0;
+  bottom: 0;
+  left:0;
+  right:0;
+}
+@mixin typing{
+  display: inline-block;
+  width: 100%;
+  white-space:nowrap;
+  overflow:hidden;
+  -webkit-animation: type 3s steps(50, end) alternate;
+  animation: type 3s steps(50, end) alternate;
+  @keyframes type{
+      from { width: 0; }
+  }
+  @-webkit-keyframes type{
+      from { width: 0; }
+  }
+}
+@mixin btn-props{
+  width:150px;
+  height:50px;
+  vertical-align: middle;
+  text-align:center;
+  line-height:50px;
+  border: 2px solid #fff;
+  transition:all 0.5s;
+}
+@mixin hover-eff-social-icon{
+  &:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5)
+  } 
+}
+
+body{
+  background-color:$main-bg;
+}
+
+section{
+  position:relative;
+  top:95px;
+}
+
+#particles-js{
+  display:block;
+  height:98vh;
+  width:100vw;
+  vertical-align: bottom;
+  background-attachment:fixed;
+}
+
+
+/**===============================================
+                  Import files
+*==============================================**/
+
+@import "header.scss";
+@import "home";
+@import "project";
+@import "contact";
+
+/**===============================================
+                    Attributes
+*==============================================**/
+
+
+
+
+
+

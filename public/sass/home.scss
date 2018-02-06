@@ -1,0 +1,93 @@
+/*** HomePage ***/
+.home-contents{
+  @include mid-pg-props;
+  width: 60%;
+  height:50%;
+  text-align:center;
+
+  h1{
+    color: $home-h1;
+    font-size: 100px;
+    padding-bottom: 0;
+    @media screen and (max-width: 414px){
+      font-size: 40px;
+    }
+
+    @media screen and (min-width: 415px){
+      font-size: 70px;
+    }
+
+    @media screen and (min-width: 1025px){
+      font-size: 100px;
+    }
+  }
+
+  h3{
+    @include typing;
+    font-size: 30px;
+    color: $home-h3;
+    @media screen and (max-width: 414px){
+      font-size: 20px;
+    }
+
+    @media screen and (min-width: 415px){
+      font-size: 30px;
+    }
+
+    @media screen and (min-width: 1025px){
+      font-size: 60px;
+    }
+  }
+
+  @media screen and (max-width: 414px){
+    width: 70%;
+  }
+}
+
+.home-btn{
+  @include btn-props;
+  // @include mid-pg-props;
+  // top:20%;
+  margin: 0 auto;
+  margin-top:100px;
+  a{
+    color:white;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  span{
+    cursor:pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    &:after{
+       content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+  }
+  &:hover{
+    background-color:#2b4251;
+    span{
+      padding-right:25px;
+      &:after{
+        opacity:1;
+        right:0;
+      }
+    }  
+  } 
+
+  @media screen and (min-width: 767px){
+    font-size:30px;
+    width:300px;
+    height:70px;
+    line-height:70px;
+  }
+  @media screen and (min-width: 1300px ){
+    // text-outline: ;p:25%;
+  }
+}

@@ -1,0 +1,105 @@
+/*** Contact page ***/
+.contact-contents{
+  @extend .home-contents;
+  margin: 0 auto;
+  margin-top:25%;
+  width: 100%;
+  height:60%;
+  h3{
+    font-size:40px;
+    margin-bottom: 30px;
+    @media screen and (min-width: 767px){
+      font-size:50px;
+    }
+    @media screen and (min-width: 1023px){
+      font-size:60px;
+    }
+  }
+  h5{
+    color:white;
+    font-size:20px;
+    a{
+      color:white;
+    }
+    @media screen and (min-width: 767px){
+      font-size:25px;
+    }
+    @media screen and (min-width: 1023px){
+      font-size:30px;
+    }
+  }
+  @media screen and (min-width: 1023px){
+    margin-top:10%;
+  }
+}
+
+.contact-item{
+  text-align: center;
+  margin-top: 20px;
+  display: inline-block;
+  i{
+    float:left;
+  }
+  h5{
+    float:left;
+    margin-left: 15px;
+    height: 100%;
+  }
+}
+
+
+/** social icon */
+.social-icon-container{
+  width: 100%;
+  margin-top:30px;
+  ul{
+    margin:0;
+    padding:0;
+    width: 100%;
+    white-space:nowrap;
+    text-align:center;
+    li {
+      @include hover-eff-social-icon;
+      display:inline-block;
+      border-radius: 50%;
+      text-align:center;
+      width:50px;
+      height:60px;
+      margin: 10px 10px 10px 10px;
+      background-color: #000;
+      list-style: none;
+      font-size: 30px;
+      transition:0.5s;
+      a {
+        display: block;
+        padding: 10px;
+        color: #fff;
+      }
+      &:nth-child(1){
+        background-color: $fb-bg;
+      }
+      &:nth-child(2){
+        background-color: $github-bg;
+      }
+      &:nth-child(3){
+        background-color: $linkedin-bg;
+      }
+    }
+  } 
+}
+
+.resume{
+  @extend .social-icon-container;
+  margin-top: 10px;
+  ul{
+    li{
+      border-radius:15px 50px;
+      width:140px;
+      a{
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
