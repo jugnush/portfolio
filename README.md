@@ -33,7 +33,7 @@ going to deploy on Heroku
 
 ## Authors
 
-* **Jugnu sharma** - *Initial work* - [PurpleBooth](https://github.com/jugnush)
+* **Jugnu sharma** 
 
 
 ## License
